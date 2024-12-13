@@ -7,7 +7,7 @@ English | [简体中文](https://github.com/nunocoracao/blowfish/blob/main/READM
 [![Blowfish](https://img.shields.io/badge/Hugo--Themes-@Blowfish-blue)](https://themes.gohugo.io/themes/blowfish/)
 ![code-size](https://img.shields.io/github/languages/code-size/nunocoracao/blowfish)
 
-Blowfish is designed to be a powerful, lightweight theme for [Hugo](https://gohugo.io). It's built using Tailwind CSS with a clean and minimalist design that prioritises to your content.
+Blowfish is designed to be a powerful, lightweight theme for [Hugo](https://gohugo.io). It's built using Tailwind CSS with a clean and mini2malist design that prioritises to your content.
 
 ![blowfish screenshot](https://github.com/nunocoracao/blowfish/blob/main/images/screenshot.png?raw=true)
 
