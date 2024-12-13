@@ -1,39 +1,34 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Hugo and Blowfish
+public/
+resources/
+exampleSite/resources/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# testing
-/coverage
+# Test binary, built with `go test -c`
+*.test
 
-# next.js
-/.next/
-/out/
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
 
-# production
-/build
+# Dependency directories (remove the comment below to include it)
+# vendor/
 
-# misc
+#others
+node_modules
+.hugo_build.lock
+
+# OS generated files
 .DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-# public/robots.txt
-# public/sitemap.xml
-
-/.firebase
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea
+.Ulysses-Group.plist
+.Ulysses-Settings.plist

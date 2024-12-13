@@ -1,144 +1,179 @@
-# morethan-log
+English | [简体中文](https://github.com/nunocoracao/blowfish/blob/main/README.zh-cn.md)
+# Blowfish
+[![Deploy Production to Firebase](https://github.com/nunocoracao/blowfish/actions/workflows/firebase-production.yml/badge.svg)](https://github.com/nunocoracao/blowfish/actions/workflows/firebase-production.yml)
+[![Deploy Production to GitHub pages](https://github.com/nunocoracao/blowfish/actions/workflows/pages.yml/badge.svg)](https://github.com/nunocoracao/blowfish/actions/workflows/pages.yml)
+[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.87.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
+[![GitHub](https://img.shields.io/github/license/nunocoracao/blowfish)](https://github.com/nunocoracao/blowfish/blob/main/LICENSE)
+[![Blowfish](https://img.shields.io/badge/Hugo--Themes-@Blowfish-blue)](https://themes.gohugo.io/themes/blowfish/)
+![code-size](https://img.shields.io/github/languages/code-size/nunocoracao/blowfish)
 
-<img width="1715" alt="image" src="https://user-images.githubusercontent.com/72514247/209824600-ca9c8acc-6d2d-4041-9931-43e34b8a9a5f.png">
+Blowfish is designed to be a powerful, lightweight theme for [Hugo](https://gohugo.io). It's built using Tailwind CSS with a clean and minimalist design that prioritises to your content.
 
-Next.js static blog using Notion as a Content Management System (CMS). Supports both Blog format Post as well as Page format for Resume. Deployed using Vercel.
+![blowfish screenshot](https://github.com/nunocoracao/blowfish/blob/main/images/screenshot.png?raw=true)
 
-[Demo Blog](https://morethan-log.vercel.app) | [Demo Resume](https://morethan-log.vercel.app/resume)
+
+🌏 [Demo site](https://blowfish.page/)  
+📑 [Theme documentation](https://blowfish.page/docs/)  
+💎 [Merch Store](http://tee.pub/lic/qwSlWVBL5zc)  
+🐛 [Bug reports & issues](https://github.com/nunocoracao/blowfish/issues)  
+💡 [Questions & feature requests](https://github.com/nunocoracao/blowfish/discussions)
+
+
+
+<a href="https://www.buymeacoffee.com/nunocoracao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<a target="_blank" href="http://tee.pub/lic/qwSlWVBL5zc"><img class="nozoom" src="https://img.buymeacoffee.com/button-api/?text=Merch Store &emoji=💎&slug=nunocoracao&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
+
 
 ## Features
 
-**📒 Writing posts using notion**
+- Fully responsive layout built with Tailwind CSS 3.0
+- Multiple colour schemes (or fully customise your own)
+- Dark mode (forced on/off or auto-switching with user toggle)
+- Highly customisable configuration
+- Firebase integration to support dynamic data
+- Views count & like mechanism
+- Related articles
+- Multiple homepage layouts
+- Multiple authors
+- Series of articles
+- Date and weight based article sorting
+- Zen mode for article reading
+- Flexible with any content types, taxonomies and menus
+- Header and footer menus
+- Nested menus & sub-navigation menu
+- Scrollable table of contents
+- Multilingual content support including support for RTL languages
+- Ability to link to posts on third-party websites
+- Support for several shortcodes like Gallery, Timeline, GitHub cards, and Carousels
+- Buymeacoffee integration
+- Client-side site search powered by Fuse.js
+- Diagrams and visualisations using Mermaid
+- Charts using Chart.js
+- TypeIt integration
+- Youtube embeds with performance improvements
+- Mathematical notation using KaTeX
+- SVG icons from FontAwesome 6
+- Automatic image resizing using Hugo Pipes
+- Heading anchors, Tables of Contents, Code copy, Buttons, Badges and more
+- HTML and Emoji support in articles 🎉
+- SEO friendly with links for sharing to social media
+- Fathom Analytics and Google Analytics support
+- RSS feeds, Favicons and comments support
+- Advanced customisation using simple Tailwind colour definitions and styles
+- Optimised for performance and accessibility with perfect Lighthouse scores
+- Fully documented with regular updates
 
-- No need of commiting to Github for posting anything to your website.
-- Posts made on Notion are automaticaly updated on your site.
+---
 
-**📄 Use as a page as resume**
+![blowfish logo](https://github.com/nunocoracao/blowfish/blob/main/logo.png?raw=true)
 
-- Useful for generating full page sites using Notion.
-- Can be used for Resume, Portfolios etc.
+## Documentation
 
-**👀 SEO friendly**
+Blowfish has [extensive documentation](https://blowfish.page/docs/) that covers all aspects of the theme. Be sure to [read the docs](https://blowfish.page/docs/) to learn more about how to use the theme and its features.
 
-- Dynamically generates OG IMAGEs (thumbnails!) for posts. ([og-image-korean](https://github.com/morethanmin/og-image-korean)).
-- Dynamically creates sitemap for posts.
+---
 
-**🤖 Customisable and Supports various plugin through CONFIG**
+## Installation
 
-- Your profile information can be updated through Config. (`site.config.js`)
-- Plugins support includes, Google Analytics, Search Console and also Commenting using Github Issues(Utterances) or Cusdis.
+Blowfish supports several installation methods - as a git submodule, a Hugo Module, or as a completely manual install.
 
-## Getting Started
+Detailed instructions for each method can be found in the [Installation](https://blowfish.page/docs/installation) docs. You should consult the documentation for the simplest setup experience. Below is a quick start guide using submodules if you are using git, or Hugo modules if you're already confident installing Hugo themes.
 
-1. Star this repo.
-2. [Fork](https://github.com/morethanmin/morethan-log/fork) the repo to your Profile.
-3. Duplicate [this Notion template](https://morethanmin.notion.site/12c38b5f459d4eb9a759f92fba6cea36?v=2e7962408e3842b2a1a801bf3546edda), and Share to Web.
-4. Copy the Web Link and keep note of the Notion Page Id from the Link which will be in this format [username.notion.site/`NOTION_PAGE_ID`?v=`VERSION_ID`]. 
-5. Clone your forked repo and then customize `site.config.js` based on your preference.
-6. Deploy on Vercel, with the following environment variables.
+### Quick start using Blowfish Tools
 
-   - `NOTION_PAGE_ID` (Required): The Notion page Id got from the Share to Web URL. This is not the entire URL, but just the NOTION_PAGE_ID part as shown above.
-   - `NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID` : For Google analytics Plugin.
-   - `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` : For Google search console Plugin.
-   - `NEXT_PUBLIC_NAVER_SITE_VERIFICATION` : For Naver search advisor Plugin.
-   - `NEXT_PUBLIC_UTTERANCES_REPO` : For Utterances Plugin.
+> **Note:** Ensure you have **Node.js**, **Git**, **Go** and **Hugo** installed, and that you have created a new Hugo project before proceeding.
 
-## 10 Steps to build your own morethan-log (by 23.06.23)
+We just launched a new CLI tool to help you get started with Blowfish. It will create a new Hugo project, install the theme and set up the theme configuration files for you. It's still in beta so please [report any issues you find](https://github.com/nunocoracao/blowfish-tools).
 
-<details>
-   <summary> Click to see guide </summary>
-   
-   0. Prepare Notion, Vercel account.
+Install the CLI tool globally using npm (or other package manager):
+```shell
+npm i -g blowfish-tools
+```
 
-   1. ⭐ `Star` and `Fork` this repo.
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/b0421776-2bfe-42bc-ae31-d90206fd5789' width = '500'>
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/185a8e4c-4ae2-4a38-b6f4-dc2a06a45c28' width = '500'>
+Then run the command `blowfish-tools` to start an interactive run which will guide you through creation and configuration use-cases.
+```shell
+blowfish-tools
+```
 
-   2. As you `click` the [Notion template](https://quasar-season-ed5.notion.site/12c38b5f459d4eb9a759f92fba6cea36?v=2e7962408e3842b2a1a801bf3546edda), you will see this notion page in your browser. Click `Duplicate` button(복제 in image) in right top.
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/a5375429-28f0-4bba-a355-0d391cad58db' width = '500'>
+You can also run the command `blowfish-tools new` to create a new Hugo project and install the theme in one go. Check the CLI help for more information.
+```shell
+blowfish-tools new mynewsite
+```
 
-   3. And you will see `notion page in notion app` in your account.
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/09af5533-43d9-48e5-95eb-dcac84c97c1f' width = '500'>
+### Quick start using git submodules
 
-   4. Click `Share` and `Publish` in right top, and check web link. (Copy web link)
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/886fe4a2-79ca-4dbc-b1e1-93984e7e3f44' width = '500'>
-   
-   5. `Modify` **site.config.js** file in **your** forked repo.
-   > 💡 NOTE. I changed **2 RED PART**
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/3d9c0da5-92bc-4372-8752-7bfc810b4986' width = '500'>
+> **Note:** Ensure you have **Git**, **Go**, and **Hugo** installed, and that you have created a new Hugo project before proceeding.
 
-   6. Move and `login` to vercel.
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/07742ad0-4766-43b0-9ebd-5311f9711bc2' width = '500'>
+1. From your project directory, initialise git:
 
-   7. `Build` new project using **Add New...**
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/517d46be-c9bf-4181-aaa5-e9bd2fcdc822' width = '500'>
+   ```shell
+   git init
+   ```
 
-   8. `Import` **your forked morethan-log repository**
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/07742ad0-4766-43b0-9ebd-5311f9711bc2' width = '500'>
+2. Configure Blowfish as a git submodule:
 
-   9. `Add` **Environment variabes** to vercel project
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/703b50a3-3a90-4915-ab73-1baca4c285f8' width = '500'>
+   ```shell
+   git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
+   ```
 
-   10. `Wait` for the deployment to complete. After the deployment is successful, you should see an image like the one below.
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/a7d72caa-4354-4f81-9577-c773faeed7c6' width = '500'>
+3. In the root folder of your website, delete the `config.toml` file that was generated by Hugo. Copy the `*.toml` config files from the theme into your `config/_default/` folder.
 
-   🥳 Congratulations. Now check out your blog
-   
-   <img src='https://github.com/jhk0530/morethan-log/assets/6457691/3876a273-a270-47ef-a2ad-663519d9e537' width = '500'>
+   You will find these theme config files in the Hugo cache directory, or [download a copy](https://github.com/nunocoracao/blowfish/releases/latest/download/config-default.zip) from GitHub.
 
-</details>
+4. Follow the [Getting Started](https://blowfish.page/docs/getting-started/) instructions to configure your website.
 
-## FAQ
+### Quick start using Hugo
 
-<details>
-   <summary> Click to see FAQ </summary>
-   Q1: If you finish making avatar.svg, How to make favicon.ico and apple-touch-icon.png?
-   
-   A1: check out https://www.favicon-generator.org/
-   
-   Q2: Is it necessary to set up a sitemap file?   
-   A2: The system will dynamically create a sitemap.xml, so there is no need for manual setup.
+> **Note:** Ensure you have **Go** and **Hugo** installed, and that you have created a new Hugo project before proceeding.
 
-   Q3: Why don’t Notion posts update automatically?   
-   A3: Please set the revalidateTime in site.config.js and observe how long it takes to update.
-   
-   Q4: What should be entered for NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID and NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in site.config.js?
-   A4: You can check https://github.com/morethanmin/morethan-log/issues/203. Please note that updates may take some time to take effect after setting.
+1. From your project directory, initialise Hugo Modules:
 
-If you encounter any other issues, please feel free to add them to the GitHub README to assist future users. We look forward to your contributions!
+   ```shell
+   hugo mod init github.com/<username>/<repo-name>
+   ```
 
-</details>
+2. Create `config/_default/module.toml` and add the following:
+
+   ```toml
+   [[imports]]
+   path = "github.com/nunocoracao/blowfish/v2"
+   ```
+
+3. Start your server using `hugo server` and the theme will be downloaded automatically.
+
+4. In the root folder of your website, delete the `hugo.toml` file that was generated by Hugo. Copy the `*.toml` config files from the theme into your `config/_default/` folder.
+
+   > **Note:** Do not overwrite the `module.toml` file you created above!
+
+   You will find these theme config files in the Hugo cache directory, or [download a copy](https://github.com/nunocoracao/blowfish/releases/latest/download/config-default.zip) from GitHub.
+
+5. Follow the [Getting Started](https://blowfish.page/docs/getting-started/) instructions to configure your website.
+
+### Installing theme updates
+
+As new releases are posted, you can update the theme using Hugo. Simply run `hugo mod get -u` from your project directory and the theme will automatically update to the latest release.
+
+Detailed [update instructions](https://blowfish.page/docs/installation/#installing-updates) are available in the docs.
+
+---
 
 ## Contributing
 
-Check out the [Contributing Guide](.github/CONTRIBUTING.md).
+Blowfish is expected to evolve over time. I intend to keep adding features and making changes as required.
 
-### Contributors
+Feel free to get in touch with any issues or suggestions for new features you'd like to see.
 
-<!--
-Contributors template:
-<a href="https://github.com/{username}"><img src="{src}" width="50px" alt="{username}" /></a>&nbsp;&nbsp;
--->
+- 🐛 **Bug reports & issues:** Use [GitHub Issues](https://github.com/nunocoracao/blowfish/issues)
+- 💡 **Ideas for new features:** Open a discussion on [GitHub Discussions](https://github.com/nunocoracao/blowfish/discussions)
+- 🙋‍♀️ **General questions:** Head to [GitHub Discussions](https://github.com/nunocoracao/blowfish/discussions)
 
-<a href="https://github.com/morethanmin/morethan-log/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=morethanmin/morethan-log" />
-</a>
+If you're able to fix a bug or implement a new feature, I welcome PRs for this purpose. Learn more in the [contributing guidelines](https://github.com/nunocoracao/blowfish/blob/main/CONTRIBUTING.md).
 
-## Support
+---
 
-morethan-log is an MIT-licensed open source project. It can grow thanks to the sponsors and support from the amazing backers.
+## Stargazers over time
 
-### Sponsors
+[![Stargazers over time](https://starchart.cc/nunocoracao/blowfish.svg)](https://starchart.cc/nunocoracao/blowfish)
 
-<!--
-Sponsors template:
-<a href="https://github.com/{uesrname}"><img src="{src}" width="50px" alt="{username}" /></a>&nbsp;&nbsp;
--->
-
-<p>
-<a href="https://github.com/siyeons"><img src="https://avatars.githubusercontent.com/u/35549653?v=4" width="50px" alt="siyeons" /></a>&nbsp;&nbsp;
-</p>
-
-## License
-
-The [MIT License](LICENSE).
+<a rel="me" href="https://masto.ai/@blowfish">Mastodon</a>
